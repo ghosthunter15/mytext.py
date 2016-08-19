@@ -7,30 +7,29 @@ def decor(func):
         print("===========================================================================")
     return wrap
 
-def greet():
-    print("Hello!!!")
-    print("keep trying, you still suck...")
-    print("keep trying, you still suck...".replace("suck", "stink"))
+#def greet():
+  #  print("Hello!!!")
+   # print("keep trying, you still suck...")
+   # print("keep trying, you still suck...".replace("suck", "stink"))
 
-#@decor
 def end():
         print("end app")
 
 #renamed the ver decorated, to greet
 #greet = decor(greet)
-greet()
+#greet()
 
 @decor
 def mytext()
 try:
     filename = input("Enter filename: ")
-   # print(text)
+  
     with open(filename, "r") as f:
-    #print(mytext)
+    
         text = f.read()
     print(text)
 except:
-    print("error")
+    print("error 01")
 finally:
     f.close()
 
